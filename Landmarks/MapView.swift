@@ -2,8 +2,6 @@
 //  MapView.swift
 //  Landmarks
 //
-//  Created by Maily Eiubov on 3/12/22.
-//
 
 import SwiftUI
 import MapKit
