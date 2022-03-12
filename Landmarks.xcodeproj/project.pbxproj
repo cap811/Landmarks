@@ -7,20 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160471E327DD2EFB00030525 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160471E227DD2EFB00030525 /* Landmark.swift */; };
+		160471E527DD4E1700030525 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160471E427DD4E1700030525 /* ModelData.swift */; };
+		160471EB27DD4F6100030525 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160471EA27DD4F6100030525 /* LandmarkRow.swift */; };
 		161E011C27DD19AD008863C9 /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E011B27DD19AD008863C9 /* LandmarksApp.swift */; };
 		161E011E27DD19AD008863C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E011D27DD19AD008863C9 /* ContentView.swift */; };
 		161E012027DD19AE008863C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 161E011F27DD19AE008863C9 /* Assets.xcassets */; };
 		161E012327DD19AE008863C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 161E012227DD19AE008863C9 /* Preview Assets.xcassets */; };
+		167607EE27DD2D8F000744E3 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 167607ED27DD2D8F000744E3 /* landmarkData.json */; };
 		16B461B627DD1D5D00079DE4 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B461B527DD1D5D00079DE4 /* CircleImage.swift */; };
 		16B461B827DD1E8700079DE4 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B461B727DD1E8700079DE4 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		160471E227DD2EFB00030525 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		160471E427DD4E1700030525 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		160471E927DD4F1500030525 /* landmarkData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		160471EA27DD4F6100030525 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		161E011827DD19AD008863C9 /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		161E011B27DD19AD008863C9 /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
 		161E011D27DD19AD008863C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		161E011F27DD19AE008863C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		161E012227DD19AE008863C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		167607ED27DD2D8F000744E3 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = landmarkData.json; path = "../../../Downloads/BuildingListsAndNavigation 2/Resources/landmarkData.json"; sourceTree = "<group>"; };
 		16B461B527DD1D5D00079DE4 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		16B461B727DD1E8700079DE4 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -36,6 +45,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160471E627DD4EFA00030525 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				161E011D27DD19AD008863C9 /* ContentView.swift */,
+				16B461B527DD1D5D00079DE4 /* CircleImage.swift */,
+				16B461B727DD1E8700079DE4 /* MapView.swift */,
+				160471EA27DD4F6100030525 /* LandmarkRow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		160471E727DD4F0200030525 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				160471E427DD4E1700030525 /* ModelData.swift */,
+				160471E227DD2EFB00030525 /* Landmark.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		160471E827DD4F0700030525 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				160471E927DD4F1500030525 /* landmarkData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		161E010F27DD19AD008863C9 = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +92,11 @@
 		161E011A27DD19AD008863C9 /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
+				160471E827DD4F0700030525 /* Resources */,
+				160471E727DD4F0200030525 /* Model */,
+				160471E627DD4EFA00030525 /* Views */,
 				161E011B27DD19AD008863C9 /* LandmarksApp.swift */,
-				16B461B527DD1D5D00079DE4 /* CircleImage.swift */,
-				16B461B727DD1E8700079DE4 /* MapView.swift */,
-				161E011D27DD19AD008863C9 /* ContentView.swift */,
+				167607ED27DD2D8F000744E3 /* landmarkData.json */,
 				161E011F27DD19AE008863C9 /* Assets.xcassets */,
 				161E012127DD19AE008863C9 /* Preview Content */,
 			);
@@ -133,6 +171,7 @@
 			files = (
 				161E012327DD19AE008863C9 /* Preview Assets.xcassets in Resources */,
 				161E012027DD19AE008863C9 /* Assets.xcassets in Resources */,
+				167607EE27DD2D8F000744E3 /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +186,9 @@
 				16B461B827DD1E8700079DE4 /* MapView.swift in Sources */,
 				161E011C27DD19AD008863C9 /* LandmarksApp.swift in Sources */,
 				16B461B627DD1D5D00079DE4 /* CircleImage.swift in Sources */,
+				160471E327DD2EFB00030525 /* Landmark.swift in Sources */,
+				160471EB27DD4F6100030525 /* LandmarkRow.swift in Sources */,
+				160471E527DD4E1700030525 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

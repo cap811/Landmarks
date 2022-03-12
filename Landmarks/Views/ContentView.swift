@@ -11,7 +11,7 @@ struct ContentView: View {
             MapView()
                 .frame(height:300)
             CircleImage()
-                .offset(y: -110)
+                .offset(y: -130)
                 .padding(.bottom, -130)
             
             VStack(alignment: .leading){
